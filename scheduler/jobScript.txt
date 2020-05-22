@@ -1,0 +1,56 @@
+module add python
+
+module add gurobi
+
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .1 .8 0 4 4Cores_U-1-8-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .1 .8 .1 4 4Cores_U-1-8-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .1 .8 .2 4 4Cores_U-1-8-2_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .45 .12 0 4 4Cores_N45-12-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .45 .12 .1 4 4Cores_N45-12-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .45 .12 .2 4 4Cores_N45-12-2_50Trials_4Per"
+
+
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .1 .8 0 4 8Cores_U-1-8-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .1 .8 .1 4 8Cores_U-1-8-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .1 .8 .2 4 8Cores_U-1-8-2_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .45 .12 0 4 8Cores_N45-12-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .45 .12 .1 4 8Cores_N45-12-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .45 .12 .2 4 8Cores_N45-12-2_50Trials_4Per"
+
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .4 .8 0 4 4Cores_U-4-8-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .4 .8 .1 4 4Cores_U-4-8-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 2 .4 .8 .2 4 4Cores_U-4-8-2_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .6 .07 0 4 4Cores_N6-07-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .6 .07 .1 4 4Cores_N6-07-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 4 50 4 .6 .07 .2 4 4Cores_N6-07-2_50Trials_4Per"
+
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .4 .8 0 4 8Cores_U-4-8-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .4 .8 .1 4 8Cores_U-4-8-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 2 .4 .8 .2 4 8Cores_U-4-8-2_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .6 .07 0 4 8Cores_N6-07-0_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .6 .07 .1 4 8Cores_N6-07-1_50Trials_4Per"
+
+sbatch -p general -N 1 --mem=256g -n 1 -c 24 -t 120:00:00 --mail-type=end --mail-user=username@university.edu --wrap="python3 RunAllTests.py.py 8 50 4 .6 .07 .2 4 8Cores_N6-07-2_50Trials_4Per"
